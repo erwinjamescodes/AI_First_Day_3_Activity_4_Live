@@ -1,4 +1,12 @@
+streamlit_option_menu
+streamlit_extras
 streamlit
-openai
+pandas
+python-decouple
+openai==0.28.1
+langchain==0.1.20
+tiktoken==0.6.0
+numpy
+scipy
 newspaper3k
 lxml_html_clean

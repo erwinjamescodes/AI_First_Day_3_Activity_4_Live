@@ -19,7 +19,7 @@ class ArticleSummarizer:
         """
         struct = [{"role": "system", "content": system_prompt}]
         struct.append({"role": "user", "content": content})
-        chat = openai.chat.completions.create(model="gpt-4o-mini", messages = struct)
+        chat = openai.ChatCompletion.create(model="gpt-4o-mini", messages = struct)
         response = chat.choices[0].message.content
         struct.append({"role": "assistant", "content": response})
         return response
